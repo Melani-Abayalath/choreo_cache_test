@@ -3,17 +3,17 @@ import ballerina/log;
 import ballerina/os;
 import ballerinax/redis;
 
-configurable string redisHost = "redis-99131fcf-9c25-444d-b667-32595703bbb0-redissv2014260135-ch.e.aivencloud.com";
-configurable int redisPort = 22930;
-configurable string redisPassword = os:getEnv("REDIS_PASS");
+configurable string redisHost = "valkey-5ea3cd2c57084489bfc3d82bd90520b2-t11308238643-choreo-org.b.aivencloud.com";
+configurable int redisPort = 28398;
+configurable string redisPassword = os:getEnv("AVNS_VTx_b6mi0U6L3JAuf7e");
 
-configurable string awsRedisHost = "redis-99131fcf-9c25-444d-b667-32595703bbb0-redissv2316697524-ch.l.aivencloud.com";
-configurable int awsRedisPort = 22930;
-configurable string awsRedisPassword = os:getEnv("AWS_REDIS_PASS");
+configurable string awsRedisHost = "valkey-5ea3cd2c57084489bfc3d82bd90520b2-t22708512358-choreo-org.b.aivencloud.com";
+configurable int awsRedisPort = 28398;
+configurable string awsRedisPassword = os:getEnv("AVNS_qNQCXj1X_68ipBz-baS");
 
-configurable string selfHostedRedisHost = "redis-db-3143544472";
-configurable int selfHostedRedisPort = 6379;
-configurable string selfHostedRedisPassword = os:getEnv("SELF_HOSTED_REDIS_PASS");
+configurable string selfHostedRedisHost = "valkey-5ea3cd2c57084489bfc3d82bd90520b2-t31908193083-choreo-org.b.aivencloud.com";
+configurable int selfHostedRedisPort = 28398;
+configurable string selfHostedRedisPassword = os:getEnv("AVNS_KkAvPIVfjDQlmXI7pdM");
 
 redis:SecureSocket redisSecureSocket = {
     verifyMode: redis:FULL
