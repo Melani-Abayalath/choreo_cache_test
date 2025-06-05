@@ -23,6 +23,7 @@ redis:ConnectionConfig redisConfig = {
     connection: {
         host: redisHost,
         port: redisPort,
+        username: "default"
         password: redisPassword,
         options: {
             connectionTimeout: 5
@@ -36,6 +37,7 @@ redis:ConnectionConfig awsRedisConfig = {
     connection: {
         host: awsRedisHost,
         port: awsRedisPort,
+        username: "default"
         password: awsRedisPassword,
         options: {
             connectionTimeout: 5
@@ -49,6 +51,7 @@ redis:ConnectionConfig selfHostedRedisConfig = {
     connection: {
         host: selfHostedRedisHost,
         port: selfHostedRedisPort,
+        username: "default"
         password: selfHostedRedisPassword,
         options: {
             connectionTimeout: 5
